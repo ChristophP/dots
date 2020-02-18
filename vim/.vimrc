@@ -25,24 +25,28 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 
 " CtrlP
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+
+"" Familiar commands for file/symbol browsing
+"map <D-p> :CtrlP<cr>
+"map <C-e> :CtrlPMRU<cr>
+
+"" start from the current working directory
+"let g:ctrlp_max_height=25
+"let g:ctrlp_clear_cache_on_exit=0
+"let g:ctrlp_max_files=0
+"let g:ctrlp_max_depth=40
+"let g:ctrlp_working_path_mode = 'a'
+
+"" I don't want to pull up these folders/files when calling CtrlP
+"set wildignore+=*/vendor/**
+"set wildignore+=*/node_modules/**
 
 " Use Airline to display file/buffer info
 Plug 'vim-airline/vim-airline'
 
-" Elm integration
-Plug 'ElmCast/elm-vim'
-" elm options
-let g:elm_format_autosave = 0
-let g:ycm_semantic_triggers = {
-    \ 'elm' : ['.'],
-    \}
-
-" Textsearch across files
-Plug 'mileszs/ack.vim'
-
-" JS indendation and syntax support
-Plug 'pangloss/vim-javascript'
+" Polyglot syntax highlightingh
+Plug 'sheerun/vim-polyglot'
 
 " insert closing braces, quotes etc.
 Plug 'jiangmiao/auto-pairs'
@@ -63,17 +67,6 @@ Plug 'alvan/vim-closetag'
 
 let g:closetag_filenames = "*.html,*.ejs,*.php,*.js"
 
-" ejs highlighting
-Plug 'briancollins/vim-jst'
-
-" Plugin for coffeescript
-Plug 'kchmck/vim-coffee-script'
-
-" Haskell highlighting
-Plug 'neovimhaskell/haskell-vim'
-let g:haskell_classic_highlighting = 1
-let g:haskell_indent_disable = 1
-
 Plug 'meck/vim-brittany'
 let g:brittany_config_file = "~/.config/brittany/config.yaml"
 
@@ -86,6 +79,10 @@ Plug 'thanethomson/vim-jenkinsfile'
 
 " Multi cursor
 Plug 'terryma/vim-multiple-cursors'
+
+" FZF
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 
 " Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -265,23 +262,6 @@ augroup myvimrc
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
 
-" CtrlP Stuff
-
-" Familiar commands for file/symbol browsing
-map <D-p> :CtrlP<cr>
-map <C-e> :CtrlPMRU<cr>
-
-" start from the current working directory
-let g:ctrlp_max_height=25
-let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_max_files=0
-let g:ctrlp_max_depth=40
-let g:ctrlp_working_path_mode = 'a'
-
-" I don't want to pull up these folders/files when calling CtrlP
-set wildignore+=*/vendor/**
-set wildignore+=*/node_modules/**
-
 " Open splits
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
@@ -303,3 +283,4 @@ autocmd FileWritePre    * :call TrimWhiteSpace()
 autocmd FileAppendPre   * :call TrimWhiteSpace()
 autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd BufWritePre     * :call TrimWhiteSpace()
+
