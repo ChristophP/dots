@@ -5,6 +5,11 @@ set t_Co=256
 " Disable safe write
 set backupcopy=yes
 
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = "\<space>"
+let g:mapleader = "\<space>"
+
 " Vundle config start
 " --------------------
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -83,6 +88,9 @@ Plug 'terryma/vim-multiple-cursors'
 " FZF
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
 
 " Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -167,11 +175,6 @@ augroup CursorLine
   au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
   au WinLeave * setlocal nocursorline
 augroup END
-
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = "\<space>"
-let g:mapleader = "\<space>"
 
 " Fast saves
 nmap <leader>w :w!<cr>
