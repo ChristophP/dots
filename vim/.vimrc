@@ -52,6 +52,9 @@ Plug 'vim-airline/vim-airline'
 
 " Polyglot syntax highlightingh
 Plug 'sheerun/vim-polyglot'
+" Keep this because polyglot does something weird with
+" safe-write otherwise
+let g:elm_format_autosave = 0
 
 " insert closing braces, quotes etc.
 Plug 'jiangmiao/auto-pairs'
@@ -98,6 +101,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 " All of your Plugins must be added before the following line
 
+
 " Start for Coc mappings
 " ----------------------
 
@@ -105,8 +109,8 @@ call plug#end()
 set hidden
 
 " Some servers have issues with backup files, see #649
-set nobackup
-set nowritebackup
+"set nobackup
+"set nowritebackup
 
 " Better display for messages
 set cmdheight=2
@@ -228,9 +232,6 @@ highlight Search cterm=underline
 " Swap files out of the project root
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
-
-" Run PHPUnit tests
-map <Leader>t :!phpunit %<cr>
 
 " Easy motion stuff
 let g:EasyMotion_leader_key = '<Leader>'
