@@ -89,11 +89,14 @@ Plug 'thanethomson/vim-jenkinsfile'
 Plug 'terryma/vim-multiple-cursors'
 
 " FZF
-Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 nmap <Leader>f :GFiles<CR>
 nmap <Leader>F :Files<CR>
+
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 
 " Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

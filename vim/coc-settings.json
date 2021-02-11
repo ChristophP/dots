@@ -1,0 +1,36 @@
+{
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform"],
+      "initializationOptions": {}
+    },
+    "elmLS": {
+      "command": "elm-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "diagnosticsOnSaveOnly": true
+      }
+    }
+  },
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
+    "typescript",
+    "javascript",
+    "json",
+    "haskell",
+    "css",
+    "scss",
+    "sass",
+    "html",
+    "html.handlebars",
+    "vue"
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.quiet": true,
+  "eslint.options": {
+    "useEslintrc": true
+  }
+}
