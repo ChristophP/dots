@@ -29,6 +29,9 @@ Plug 'scrooloose/nerdtree'
 " Batch Commenting
 Plug 'scrooloose/nerdcommenter'
 
+" colors
+Plug 'drewtempelmeyer/palenight.vim'
+
 " CtrlP
 "Plug 'ctrlpvim/ctrlp.vim'
 
@@ -144,12 +147,13 @@ endfunction
 " ----------------------
 
 syntax enable
-colorscheme xoria256
 
 " These options only work in a gui environment
+colorscheme palenight
 set guifont=menlo\ for\ powerline:h16
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
+set termguicolors " Required for many colorschemes
 set go-=L " Removes left hand scroll bar
 set linespace=15
 
