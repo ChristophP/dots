@@ -93,18 +93,15 @@ call plug#end()
 " Start for Coc mappings
 " ----------------------
 "
-" These seem to be in effect even though they are commented out. Where do the
-" bindings come from?
-"
 " from Elm LS
-" nmap <leader>r <Plug>(coc-rename)
-" nmap <silent> <leader>s <Plug>(coc-fix-current)
-" nmap <silent> <leader>S <Plug>(coc-codeaction)
-" nmap <silent> <leader>a <Plug>(coc-diagnostic-next)
-" nmap <silent> <leader>A <Plug>(coc-diagnostic-next-error)
-" nmap <silent> <leader>d <Plug>(coc-definition)
-" nmap <silent> <leader>g :call CocAction('doHover')<CR>
-" nmap <silent> <leader>u <Plug>(coc-references)
+nmap <leader>r <Plug>(coc-rename)
+nmap <silent> <leader>s <Plug>(coc-fix-current)
+nmap <silent> <leader>S <Plug>(coc-codeaction)
+nmap <silent> <leader>a <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>A <Plug>(coc-diagnostic-next-error)
+nmap <silent> <leader>d <Plug>(coc-definition)
+nmap <silent> <leader>g :call CocAction('doHover')<CR>
+nmap <silent> <leader>u <Plug>(coc-references)
 " nmap <silent> <leader>p :call CocActionAsync('format')<CR>
 
 " if hidden is not set, TextEdit might fail.
