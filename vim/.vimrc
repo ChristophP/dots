@@ -32,24 +32,6 @@ Plug 'scrooloose/nerdcommenter'
 " colors
 Plug 'drewtempelmeyer/palenight.vim'
 
-" CtrlP
-"Plug 'ctrlpvim/ctrlp.vim'
-
-"" Familiar commands for file/symbol browsing
-"map <D-p> :CtrlP<cr>
-"map <C-e> :CtrlPMRU<cr>
-
-"" start from the current working directory
-"let g:ctrlp_max_height=25
-"let g:ctrlp_clear_cache_on_exit=0
-"let g:ctrlp_max_files=0
-"let g:ctrlp_max_depth=40
-"let g:ctrlp_working_path_mode = 'a'
-
-"" I don't want to pull up these folders/files when calling CtrlP
-"set wildignore+=*/vendor/**
-"set wildignore+=*/node_modules/**
-
 " Use Airline to display file/buffer info
 Plug 'vim-airline/vim-airline'
 
@@ -110,6 +92,9 @@ call plug#end()
 
 " Start for Coc mappings
 " ----------------------
+"
+" These seem to be in effect even though they are commented out. Where do the
+" bindings come from?
 "
 " from Elm LS
 " nmap <leader>r <Plug>(coc-rename)
