@@ -32,24 +32,6 @@ Plug 'scrooloose/nerdcommenter'
 " colors
 Plug 'drewtempelmeyer/palenight.vim'
 
-" CtrlP
-"Plug 'ctrlpvim/ctrlp.vim'
-
-"" Familiar commands for file/symbol browsing
-"map <D-p> :CtrlP<cr>
-"map <C-e> :CtrlPMRU<cr>
-
-"" start from the current working directory
-"let g:ctrlp_max_height=25
-"let g:ctrlp_clear_cache_on_exit=0
-"let g:ctrlp_max_files=0
-"let g:ctrlp_max_depth=40
-"let g:ctrlp_working_path_mode = 'a'
-
-"" I don't want to pull up these folders/files when calling CtrlP
-"set wildignore+=*/vendor/**
-"set wildignore+=*/node_modules/**
-
 " Use Airline to display file/buffer info
 Plug 'vim-airline/vim-airline'
 
@@ -110,6 +92,17 @@ call plug#end()
 
 " Start for Coc mappings
 " ----------------------
+"
+" from Elm LS
+nmap <leader>r <Plug>(coc-rename)
+nmap <silent> <leader>s <Plug>(coc-fix-current)
+nmap <silent> <leader>S <Plug>(coc-codeaction)
+nmap <silent> <leader>a <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>A <Plug>(coc-diagnostic-next-error)
+nmap <silent> <leader>d <Plug>(coc-definition)
+nmap <silent> <leader>g :call CocAction('doHover')<CR>
+nmap <silent> <leader>u <Plug>(coc-references)
+" nmap <silent> <leader>p :call CocActionAsync('format')<CR>
 
 " if hidden is not set, TextEdit might fail.
 set hidden
