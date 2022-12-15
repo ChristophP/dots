@@ -53,10 +53,10 @@ map ("n", "<C-w>", ":bp|bd #<CR>", opts)
 -- Telescope
 map('n', '<Leader>f', ':Telescope find_files<CR>', opts)
 map('n', '<Leader>F', ':Telescope live_grep<CR>', opts)
-map('n', '<Leader>fb', ':Telescope buffers<CR>', opts)
-map('n', '<Leader>fp', ':Telescope projects<CR>', opts)
-map('n', '<Leader>fc', ':Telescope git_branches<CR>', opts)
-map('n', '<Leader>fr', ':Telescope oldfiles<CR>', opts)
+-- map('n', '<Leader>fb', ':Telescope buffers<CR>', opts)
+-- map('n', '<Leader>fp', ':Telescope projects<CR>', opts)
+-- map('n', '<Leader>fc', ':Telescope git_branches<CR>', opts)
+-- map('n', '<Leader>fr', ':Telescope oldfiles<CR>', opts)
 
 -- nvim-tree
 map('n', '<C-b>', ':NvimTreeToggle<CR>', opts)
