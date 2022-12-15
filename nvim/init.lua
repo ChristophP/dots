@@ -23,4 +23,5 @@ require('plugins.lightspeed')
 require('plugins.catppuccin')
 require('plugins.tokyonight')
 
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "tokyonight"
