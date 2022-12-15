@@ -34,7 +34,7 @@ local on_attach = function(client, bufnr)
   vim.cmd [[ autocmd CursorHold * lua vim.diagnostic.open_float() ]]
 
   -- Highlight other occurances of word on which the cursor is
-  if client.resolved_capabilities.document_highlight then
+  if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_exec(
       [[
       augroup lsp_document_highlight
@@ -48,8 +48,8 @@ local on_attach = function(client, bufnr)
   end
 
   -- We want to use null-ls for formatting so we disable the language server's
-  client.resolved_capabilities.document_formatting = false
-  client.resolved_capabilities.document_range_formatting = false
+  client.server_capabilities.documentFormattingProvider = false
+  client.server_capabilities.documentRangeFormattingProvider = false
 
 end
 
