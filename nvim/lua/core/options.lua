@@ -27,8 +27,9 @@ local options = {
   smartcase = true,                        -- override ignorecase if the search pattern contains upper case chars
 
   updatetime = 300,                        -- faster completion
-  timeoutlen = 1000
+  timeoutlen = 1000,
 
+  backupcopy = "yes"                       -- make a copy of the file and overwrite the original one
   }
 
 for k, v in pairs(options) do
