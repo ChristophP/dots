@@ -1,6 +1,7 @@
 {
   "LazyVim": { "branch": "main", "commit": "663e142bcd99e5546989b762ef4d04680d8715a2" },
   "LuaSnip": { "branch": "master", "commit": "d404ec306bfa4cdb0c3605dbb17e8a93a9597337" },
+  "SchemaStore.nvim": { "branch": "main", "commit": "5c5723bd464fd048f5d62fcf20c41495d3386a33" },
   "alpha-nvim": { "branch": "main", "commit": "21a0f2520ad3a7c32c0822f943368dc063a569fb" },
   "bufferline.nvim": { "branch": "main", "commit": "c7492a76ce8218e3335f027af44930576b561013" },
   "catppuccin": { "branch": "main", "commit": "8769e767f12f5bf0b7d1250ee067088e7054809a" },
@@ -19,6 +20,7 @@
   "mason-lspconfig.nvim": { "branch": "main", "commit": "53f3a8bdcb77d4a95b082fd57e12173f353c6c3e" },
   "mason.nvim": { "branch": "main", "commit": "4952a48722b3fa01e03c67ab939d5b7d3037309e" },
   "mini.ai": { "branch": "main", "commit": "9e5b33644dd03f9305ce4c6d8293a64953933291" },
+  "mini.animate": { "branch": "main", "commit": "56a9d5438343504927412b7f858accc3cea29e00" },
   "mini.bufremove": { "branch": "main", "commit": "f651349d730c17ecdbef5a91c590779fb307ee37" },
   "mini.comment": { "branch": "main", "commit": "137cf43aaaed41c733a8e0087fab6ee08bb45293" },
   "mini.indentscope": { "branch": "main", "commit": "3a517f11aa9d1434c4cdba1a807df4e5ca42d3ea" },
@@ -45,6 +47,7 @@
   "todo-comments.nvim": { "branch": "main", "commit": "74c7d28cb50b0713c881ef69bcb6cdd77d8907d1" },
   "tokyonight.nvim": { "branch": "main", "commit": "affb21a81e6d7de073378eb86d02864c594104d9" },
   "trouble.nvim": { "branch": "main", "commit": "490f7fe6d227f4f7a64f00be8c7dcd7a508ed271" },
+  "typescript.nvim": { "branch": "main", "commit": "f66d4472606cb24615dfb7dbc6557e779d177624" },
   "vim-illuminate": { "branch": "master", "commit": "d6ca7f77eeaf61b3e6ce9f0e5a978d606df44298" },
   "vim-repeat": { "branch": "master", "commit": "24afe922e6a05891756ecf331f39a1f6743d3d5a" },
   "vim-startuptime": { "branch": "master", "commit": "6580cf539c33a212f4f5542068a3b4dd2b3ad834" },
