@@ -5,3 +5,5 @@
 local opt = vim.opt
 
 opt.relativenumber = false -- use absolute line numbers
+
+opt.conceallevel = 0 -- See https://neovim.io/doc/user/options.html#'conceallevel'
