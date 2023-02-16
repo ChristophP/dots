@@ -12,7 +12,7 @@ local code_actions = null_ls.builtins.code_actions
 local diagnostics = null_ls.builtins.diagnostics
 
 local sources = {
-  -- formatting.prettierd,
+  formatting.prettierd,
   formatting.terraform_fmt,
   formatting.eslint_d,
   diagnostics.eslint_d,
