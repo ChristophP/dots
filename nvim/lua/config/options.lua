@@ -5,5 +5,5 @@
 local opt = vim.opt
 
 opt.relativenumber = false -- use absolute line numbers
-
 opt.conceallevel = 0 -- See https://neovim.io/doc/user/options.html#'conceallevel'
+opt.backupcopy = "yes" -- make a copy of the file and overwrite the original one. File watcher get confused if not set.
