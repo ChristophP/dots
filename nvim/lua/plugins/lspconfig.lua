@@ -12,6 +12,9 @@ return {
     servers = {
       -- elmls will be automatically installed with mason and loaded with lspconfig
       elmls = {},
+      terraformls = function(_, opts)
+        opts.capabilities.documentFormattingProvider = false
+      end,
     },
   },
 }
