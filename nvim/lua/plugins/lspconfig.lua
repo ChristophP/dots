@@ -14,6 +14,7 @@ return {
       elmls = {},
       terraformls = {},
       phpactor = {},
+      tailwindcss = {},
     },
   },
   setup = {
