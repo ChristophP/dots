@@ -9,17 +9,11 @@ return {
   ---@class PluginLspOpts
   opts = {
     ---@type lspconfig.options
-    servers = {
-      -- elmls will be automatically installed with mason and loaded with lspconfig
-      elmls = {},
-      terraformls = {},
-      phpactor = {},
-      tailwindcss = {},
-    },
+    servers = {},
   },
   setup = {
-    terraformls = function(_, opts)
-      opts.capabilities.documentFormattingProvider = false
-    end,
+    -- terraformls = function(_, opts)
+    --   opts.capabilities.documentFormattingProvider = false
+    -- end,
   },
 }

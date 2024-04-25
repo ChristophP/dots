@@ -7,10 +7,6 @@ local opts = { noremap = true }
 -- Easier write file
 map("n", "<Leader>w", ":w!<CR>", opts)
 
--- text navigation
-map("n", "<C-j>", ":+10<CR>", opts)
-map("n", "<C-k>", ":-10<CR>", opts)
-
 -- Easier window navigation
 -- map('n', '<C-h>', '<C-w>h', opts)
 -- map('n', '<C-l>', '<C-w>l', opts)
